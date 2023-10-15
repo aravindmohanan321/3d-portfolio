@@ -11,7 +11,7 @@ const Computers = ({ isMobile }: ComputersProps): React.JSX.Element => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={4} groundColor="black" />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow />
       <pointLight intensity={1} />
       <primitive

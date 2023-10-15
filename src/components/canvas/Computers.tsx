@@ -8,7 +8,7 @@ interface ComputersProps {
 }
 
 const Computers = ({ isMobile }: ComputersProps): React.JSX.Element => {
-  const computer = useGLTF('./pc/scene.gltf');
+  const computer = useGLTF('./macbook/scene.gltf');
   return (
     <mesh>
       <hemisphereLight intensity={4} groundColor="black" />

@@ -43,11 +43,11 @@ const ComputersCanvas = (): React.JSX.Element => {
 
   return (
     <Canvas
-      frameloop="demand"
       shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      frameloop="demand"
       gl={{ preserveDrawingBuffer: true }}
+      camera={{ fov: 25, position: [20, 3, 5] }}
+      dpr={[1, 2]}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />

@@ -15,7 +15,8 @@ const Navbar = (): React.JSX.Element => {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
-            setActive('');
+            console.log(window.location);
+            setActive('`');
             window.scrollTo(0, 0);
           }}
         >

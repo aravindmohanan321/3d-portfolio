@@ -8,7 +8,7 @@ interface ComputersProps {
 }
 
 const Computers = ({ isMobile }: ComputersProps): React.JSX.Element => {
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computer = useGLTF('https://3d-portfolio-arv.s3.amazonaws.com/desktop_pc/scene.gltf');
   return (
     <mesh>
       <hemisphereLight intensity={4} groundColor="black" />

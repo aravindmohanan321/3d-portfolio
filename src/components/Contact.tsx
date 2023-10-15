@@ -7,7 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
 const Contact = (): React.JSX.Element => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
     name: '',
     email: '',

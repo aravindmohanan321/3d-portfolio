@@ -3,11 +3,12 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 import * as random from 'maath/random/dist/maath-random.cjs';
 
-const Stars = (props): React.JSX.Element => {
-  const ref: React.MutableRefObject<THREE.Points> = useRef();
+const Stars = (props: any): React.JSX.Element => {
+  const ref = useRef<THREE.Points>(null);
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((state, delta) => {
+    if (!ref.current) return;
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });

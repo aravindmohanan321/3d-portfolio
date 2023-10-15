@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
-const Ball = ({ imgUrl }): React.JSX.Element => {
+const Ball: React.FC<{ imgUrl: string }> = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl]);
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -18,7 +18,7 @@ const Ball = ({ imgUrl }): React.JSX.Element => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas: React.FC<{ icon: string }> = ({ icon }) => {
   return (
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>

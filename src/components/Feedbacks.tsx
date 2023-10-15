@@ -5,10 +5,19 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants';
 
-const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => {
+interface Testimonials {
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  image: string;
+  index?: number;
+}
+
+const FeedbackCard = ({ index, testimonial, name, designation, company, image }: Testimonials) => {
   return (
     <motion.div
-      variants={fadeIn('', 'spring', index * 0.5, 0.75)}
+      variants={fadeIn('', 'spring', index! * 0.5, 0.75)}
       className="bg-black p-10 rounded-3xl xs:w-[320px] w-full"
     >
       <p className="text-white font-black text-[48px]">"</p>
@@ -41,7 +50,7 @@ const Feedbacks = (): React.JSX.Element => {
         </motion.div>
       </div>
       <div className={`${styles.padding} -mt-20 pb-14 flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
+        {testimonials.map((testimonial: Testimonials, index: number) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>

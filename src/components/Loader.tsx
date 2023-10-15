@@ -6,7 +6,7 @@ const Loader = (): React.JSX.Element => {
 
   return (
     <Html>
-      <span className="canvas-load">
+      <span className="canvas-loader">
         <p
           style={{
             fontSize: 14,

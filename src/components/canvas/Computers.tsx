@@ -27,18 +27,18 @@ const Computers = ({ isMobile }: ComputersProps): React.JSX.Element => {
 const ComputersCanvas = (): React.JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
 
-  const isLoggedFromMobile = (): boolean=>{
-    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    return regex.test(navigator.userAgent);
-  }
+  // const isLoggedFromMobile = (): boolean=>{
+  //   const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  //   return regex.test(navigator.userAgent);
+  // }
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 500px)');
     setIsMobile(mediaQuery.matches);
 
-    if (isLoggedFromMobile()) {
-      setIsMobile(true);
-    }
+    // if (isLoggedFromMobile()) {
+    //   setIsMobile(true);
+    // }
     
     const handleMediaQueryChanges = (event: MediaQueryListEvent) => {
       setIsMobile(event.matches);

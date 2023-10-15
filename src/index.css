@@ -102,6 +102,11 @@
   transform: translateZ(0);
 }
 
+button:disabled,
+button[disabled] {
+  cursor: wait;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

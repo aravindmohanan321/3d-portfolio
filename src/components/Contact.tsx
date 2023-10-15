@@ -63,6 +63,7 @@ const Contact = (): React.JSX.Element => {
             <input
               type="text"
               name="name"
+              required
               value={form.name}
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
@@ -75,6 +76,7 @@ const Contact = (): React.JSX.Element => {
             <input
               type="email"
               name="email"
+              required
               value={form.email}
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"

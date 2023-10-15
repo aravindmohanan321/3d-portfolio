@@ -48,7 +48,7 @@ const About = (): React.JSX.Element => {
       <br />
       <div className="flex gap-3">
         To know more about me
-        <div className="w-10 flex justify-center items-center cursor-pointer">
+        <div className="w-14 flex justify-center items-center cursor-pointer">
           <a href="https://www.linkedin.com/in/aravind-mohanan" target="_blank">
             <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain rounded-full" />
           </a>

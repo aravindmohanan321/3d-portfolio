@@ -13,7 +13,7 @@ const Computers = ({ isMobile }: ComputersProps): React.JSX.Element => {
     <mesh>
       <hemisphereLight intensity={4} groundColor="black" />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow />
-      <pointLight intensity={1} />
+      {/* <pointLight intensity={1} /> */}
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}

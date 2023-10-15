@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+//import { ComputersCanvas } from './canvas';
 
 const Hero = (): React.JSX.Element => {
   return (
@@ -25,7 +25,7 @@ const Hero = (): React.JSX.Element => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       {/* navigation icon animated */}
       <div className={`absolute inset-x-0 bottom-0 w-full flex justify-center items-center`}>

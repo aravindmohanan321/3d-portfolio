@@ -32,7 +32,7 @@ const Navbar = (): React.JSX.Element => {
     >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
         <Link
-          to="https://aravindmohanan321.github.io/3d-portfolio/"
+          to={window.location.href.split('#')[0]}
           className="flex items-center gap-2"
           onClick={() => {
             setActive('`');

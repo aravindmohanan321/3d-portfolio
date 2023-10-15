@@ -44,16 +44,16 @@ const About = (): React.JSX.Element => {
         React.js, Node.js, Lit, and a beginner in Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to
         bring your ideas to life!
-        <br />
-        <div className="flex gap-3">
-          To know more about me
-          <div className="w-10 h-10 flex justify-center items-center cursor-pointer">
-            <a href="https://www.linkedin.com/in/aravind-mohanan" target="_blank">
-              <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain rounded-full" />
-            </a>
-          </div>
-        </div>
       </motion.p>
+      <br />
+      <div className="flex gap-3">
+        To know more about me
+        <div className="w-10 flex justify-center items-center cursor-pointer">
+          <a href="https://www.linkedin.com/in/aravind-mohanan" target="_blank">
+            <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain rounded-full" />
+          </a>
+        </div>
+      </div>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

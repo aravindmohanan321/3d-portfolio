@@ -12,10 +12,9 @@ const Navbar = (): React.JSX.Element => {
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
         <Link
-          to="/"
+          to="https://aravindmohanan321.github.io/3d-portfolio/"
           className="flex items-center gap-2"
           onClick={() => {
-            console.log(window.location);
             setActive('`');
             window.scrollTo(0, 0);
           }}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
@@ -7,9 +7,29 @@ import { logo, menu, close } from '../assets';
 const Navbar = (): React.JSX.Element => {
   const [active, setActive] = useState('`');
   const [toggle, setToggle] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
+        isScrolled ? `bg-primary` : `bg-transparent`
+      }`}
+    >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
         <Link
           to="https://aravindmohanan321.github.io/3d-portfolio/"

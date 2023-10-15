@@ -39,7 +39,7 @@ const ComputersCanvas = (): React.JSX.Element => {
     // if (isLoggedFromMobile()) {
     //   setIsMobile(true);
     // }
-    
+
     const handleMediaQueryChanges = (event: MediaQueryListEvent) => {
       setIsMobile(event.matches);
     };

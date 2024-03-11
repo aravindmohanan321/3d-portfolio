@@ -32,9 +32,9 @@ import TA from './company/TA.png';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
-import tripguide from './tripguide.png';
-import aedashboard from './AEDashboard.png';
-import customerNavigator from './customerNavigator.png';
+import tripguide from './tripguide-min.png';
+import aedashboard from './AEDashboard-min.png';
+import customerNavigator from './customerNavigator-min.png';
 import tflDesigner from './tflDesigner.png';
 
 export {

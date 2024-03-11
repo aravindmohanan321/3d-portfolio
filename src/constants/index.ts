@@ -248,6 +248,26 @@ const projects = [
     image: tripguide,
     source_code_link: 'https://github.com/',
   },
+  {
+    name: 'TFL Designer',
+    description: 'Product for creating clinical trial reports, and its associated documents.',
+    tags: [
+      {
+        name: 'React.js',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Node.js',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: tripguide,
+    source_code_link: 'https://github.com/',
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

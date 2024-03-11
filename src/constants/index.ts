@@ -20,6 +20,7 @@ import {
   TA,
   aedashboard,
   customerNavigator,
+  tflDesigner,
 } from '../assets';
 
 export const navLinks = [
@@ -265,7 +266,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
+    image: tflDesigner,
     source_code_link: 'https://github.com/',
   },
 ];

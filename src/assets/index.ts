@@ -35,6 +35,7 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 import aedashboard from './AEDashboard.png';
 import customerNavigator from './customerNavigator.png';
+import tflDesigner from './tflDesigner.png';
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   linkedin,
   aedashboard,
   customerNavigator,
+  tflDesigner,
 };

@@ -36,6 +36,7 @@ import tripguide from './tripguide-min.png';
 import aedashboard from './AEDashboard-min.png';
 import customerNavigator from './customerNavigator-min.png';
 import tflDesigner from './tflDesigner.png';
+import weatherApp from './weatherApp.png';
 
 export {
   logo,
@@ -73,4 +74,5 @@ export {
   aedashboard,
   customerNavigator,
   tflDesigner,
+  weatherApp,
 };

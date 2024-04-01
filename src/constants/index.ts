@@ -21,6 +21,7 @@ import {
   aedashboard,
   customerNavigator,
   tflDesigner,
+  weatherApp,
 } from '../assets';
 
 export const navLinks = [
@@ -190,7 +191,8 @@ const testimonials = [
 const projects = [
   {
     name: 'AE Dashboard',
-    description: 'Product for Accountable Executives, to view and manage complaints and details about different AEs.',
+    description:
+      'A platform tailored for Accountable Executives to access and oversee complaints, as well as specific details regarding various AEs.',
     tags: [
       {
         name: 'lit',
@@ -210,7 +212,7 @@ const projects = [
   },
   {
     name: 'Customer Navigator',
-    description: "Product for data analyst people to keep track of their customer's complaints and frustration index.",
+    description: 'A tool designed for data analysts to monitor customer complaints and gauge frustration levels.',
     tags: [
       {
         name: 'lit',
@@ -229,9 +231,30 @@ const projects = [
     source_code_link: 'https://github.com/',
   },
   {
+    name: 'Weather Forecast App',
+    description:
+      'An app for retrieving weather information, allowing users to input a location manually or utilize their live location.',
+    tags: [
+      {
+        name: 'React.js',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'TypeScript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: weatherApp,
+    source_code_link: 'https://github.com/aravindmohanan321/weather-forecast-app',
+  },
+  {
     name: 'Service Animal Travel Solutions',
     description:
-      'Product for managing the required Department of Transportation (DOT) for traveling with service animals.',
+      'A solution for overseeing Department of Transportation (DOT) compliance pertaining to traveling with service animals.',
     tags: [
       {
         name: 'React.js',
@@ -251,7 +274,8 @@ const projects = [
   },
   {
     name: 'TFL Designer',
-    description: 'Product for creating clinical trial reports, and its associated documents.',
+    description:
+      'A tool for generating clinical trial reports, along with its related documents such as study configuration, shell configuration, as well as tables, figures, and lists.',
     tags: [
       {
         name: 'React.js',
